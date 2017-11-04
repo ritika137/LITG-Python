@@ -16,8 +16,8 @@ fileData = pd.read_csv('ex1data1.txt', names = ['population', 'profit'])
 print(fileData.head())
 
 ## Split population and profit into X and y
-X_df = pd.DataFrame(data.population)  ### how is this working with data??? -_- shouldn't this be fileData??
-y_df = pd.DataFrame(data.profit)
+X_df = pd.DataFrame(fileData.population)  ### how is this working with data??? -_- shouldn't this be fileData??
+y_df = pd.DataFrame(fileData.profit)
 X_df.insert(0, 'Ones',1)
 
 print(X_df)
