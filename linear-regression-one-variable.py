@@ -87,7 +87,7 @@ def gradient_descent(X, y, theta, alpha, iterations):
     for iteration in range(iterations):
         hypothesis = X.dot(theta)
         loss = hypothesis-y
-        gradient = X.T.dot(loss)/m ### while is X before? and why Transpose??
+        gradient = X.T.dot(loss)/m 
         theta = theta - alpha*gradient
         cost = cost_function(X, y, theta)
         cost_history[iteration] = cost
